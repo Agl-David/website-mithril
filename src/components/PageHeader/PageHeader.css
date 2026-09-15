@@ -1,61 +1,133 @@
+/* ==============================
+   PAGE HEADER
+   ============================== */
+
+.page-header {
+  width: 100%;
+  min-height: 665px;
+
+  background-color: var(--color-background);
+
+  display: flex;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+
+/* ==============================
+   CONTENIDO
+   ============================== */
+
+.page-header-content {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+  padding: 0 30px;
+
+  box-sizing: border-box;
+}
+
+
+/* ==============================
+   ETIQUETA
+   ============================== */
+
+.page-header-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 7px 13px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+
+  color: var(--color-text-secondary);
+
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+
+/* PUNTO AMARILLO */
+
+.page-header-dot {
+  width: 7px;
+  height: 7px;
+
+  background-color: var(--color-primary);
+
+  border-radius: 50%;
+}
+
+
+/* ==============================
+   TÍTULO
+   ============================== */
+
+.page-header-title {
+  max-width: 600px;
+
+  margin: 25px 0 18px;
+
+  color: var(--color-text);
+
+  font-family: Arial, sans-serif;
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+
+/* PALABRA DESTACADA */
+
+.page-header-highlight {
+  display: block;
+
+  color: var(--color-primary);
+}
+
+
+/* ==============================
+   DESCRIPCIÓN
+   ============================== */
+
+.page-header-description {
+  max-width: 560px;
+
+  margin: 0;
+
+  color: var(--color-text-secondary);
+
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+
 @media (max-width: 768px) {
-
-  .navbar {
-    justify-content: flex-start;
-    padding: 18px 20px;
+  .page-header {
+    min-height: 550px;
   }
 
-
-  /* BOTÓN HAMBURGUESA */
-
-  .navbar-toggle {
-    display: block;
-
-    position: static;
-
-    margin-right: 15px;
+  .page-header-content {
+    padding: 0 20px;
   }
 
-
-  /* LOGO */
-
-  .navbar-logo {
-    position: static;
+  .page-header-title {
+    font-size: 42px;
   }
 
-
-  /* MENÚ */
-
-  .navbar-menu {
-    display: none;
-
-    position: absolute;
-    top: 100%;
-    left: 0;
-
-    flex-direction: column;
-    align-items: flex-start;
-
-    width: 100%;
-
-    padding: 20px;
-
-    background-color: var(--color-background);
-    border-bottom: 1px solid var(--color-border);
-
-    box-sizing: border-box;
-  }
-
-
-  .navbar-menu.open {
-    display: flex;
-  }
-
-
-  .navbar-link {
-    width: 100%;
-    padding: 12px 0;
+  .page-header-description {
     font-size: 16px;
   }
-
 }
