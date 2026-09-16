@@ -4,10 +4,10 @@ const Contacto = () => {
   return (
     <>
       <PageHeader
-        label="CONTACT"
-        title="Let's talk"
-        highlight="about your project."
-        description="Tell us what you need and we will help you find the right solution for your natural gas installation."
+        label="Contacto"
+        title="Contáctanos y solicita tu"
+        highlight="cotización"
+        description="Estamos disponibles para brindarte asesoramiento y ayudarte a encontrar la solución adecuada."
       />
     </>
   );

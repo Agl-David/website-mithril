@@ -4,10 +4,10 @@ const Proyectos = () => {
   return (
     <>
       <PageHeader
-        label="OUR PROJECTS"
-        title="Projects"
-        highlight="built right."
-        description="Explore our residential and commercial natural gas installation projects."
+        label="Proyectos"
+        title="Experiencia en cada"
+        highlight="proyecto"
+        description="Instalaciones y soluciones desarrolladas para cada necesidad."
       />
     </>
   );

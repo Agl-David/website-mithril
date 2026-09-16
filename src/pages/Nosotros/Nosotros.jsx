@@ -4,13 +4,13 @@ const Nosotros = () => {
   return (
     <>
       <PageHeader
-        label="SOBRE NOSOTROS"
-        title="Built on"
-        highlight="trust and quality."
-        description="We provide reliable natural gas installation services with a focus on safety, precision, and professional work."
+        label="Nosotros"
+        title="Experiencia y conocimiento"
+        highlight="técnico"
+        description="Somos una empresa especializada en instalaciones de Gas Natural para los sectores residencial, comercial e industrial. Brindamos asesoramiento técnico y soluciones adaptadas a las necesidades de cada proyecto, con experiencia y compromiso."
       />
     </>
   );
 };
 
-export default Nosotros;
+export default Nosotros;  

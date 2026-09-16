@@ -4,10 +4,10 @@ const Servicios = () => {
   return (
     <>
       <PageHeader
-        label="OUR SERVICES"
-        title="Every job,"
-        highlight="quoted upfront."
-        description="Six core services, one standard: tidy work, honest pricing, and a workmanship guarantee on everything we touch."
+        label="Servicios"
+        title="Soluciones en Gas Natural para cada"
+        highlight=" proyecto"
+        description="Ofrecemos soluciones técnicas para instalaciones nuevas, ampliaciones, modificaciones y proyectos de Gas Natural."
       />
     </>
   );
