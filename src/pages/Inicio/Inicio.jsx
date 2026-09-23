@@ -4,10 +4,10 @@ const Inicio = () => {
   return (
     <>
       <PageHeader
-        label="Inicio"
-        title="Empresa Instaladora de"
-        highlight="Gas Natural"
-        description="Diseño, instalación y asesoramiento para proyectos residenciales, comerciales e industriales."
+        etiqueta="Inicio"
+        titulo="Empresa Instaladora de"
+        resaltado="Gas Natural"
+        descripcion="Diseño, instalación y asesoramiento para proyectos residenciales, comerciales e industriales."
       />
     </>
   );

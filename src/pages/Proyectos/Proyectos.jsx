@@ -4,10 +4,10 @@ const Proyectos = () => {
   return (
     <>
       <PageHeader
-        label="Proyectos"
-        title="Experiencia en cada"
-        highlight="proyecto"
-        description="Instalaciones y soluciones desarrolladas para cada necesidad."
+        etiqueta="Proyectos"
+        titulo="Experiencia en cada"
+        resaltado="proyecto"
+        descripcion="Instalaciones y soluciones desarrolladas para cada necesidad."
       />
     </>
   );

@@ -1,84 +1,38 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
-
   return (
     <header className="navbar">
 
-      {/* BOTÓN HAMBURGUESA */}
-      <button
-        className="navbar-toggle"
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Abrir menú"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-
       {/* LOGO */}
-      <NavLink
-        to="/"
-        className="navbar-logo"
-        onClick={closeMenu}
-      >
-        ⚡ MITHRIL
+      <NavLink to="/" className="navbar-logo" >
+        MITHRIL
       </NavLink>
 
-
       {/* MENÚ */}
-      <nav className={`navbar-menu ${menuOpen ? "open" : ""}`}>
-
-        <NavLink
-          to="/"
-          className="navbar-link"
-          onClick={closeMenu}
-        >
+      <nav className="navbar-menu">
+        <NavLink to="/" className="navbar-link">
           Inicio
         </NavLink>
 
-        <NavLink
-          to="/servicios"
-          className="navbar-link"
-          onClick={closeMenu}
-        >
+        <NavLink to="/servicios" className="navbar-link">
           Servicios
         </NavLink>
 
-        <NavLink
-          to="/nosotros"
-          className="navbar-link"
-          onClick={closeMenu}
-        >
+        <NavLink to="/nosotros" className="navbar-link">
           Nosotros
         </NavLink>
 
-        <NavLink
-          to="/proyectos"
-          className="navbar-link"
-          onClick={closeMenu}
-        >
+        <NavLink to="/proyectos" className="navbar-link">
           Proyectos
         </NavLink>
 
-        <NavLink
-          to="/contacto"
-          className="navbar-link"
-          onClick={closeMenu}
-        >
+        <NavLink to="/contacto" className='navbar-link' >
           Contacto
         </NavLink>
-
       </nav>
-
+      
     </header>
   );
 };

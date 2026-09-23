@@ -1,21 +1,28 @@
 import "./PageHeader.css";
 
-const PageHeader = ({ label, title, highlight, description }) => {
+const PageHeader = ({ etiqueta, titulo, resaltado, descripcion }) => {
   return (
     <section className="page-header">
-      <div className="page-header-content">
-        <span className="page-header-label">
-          <span className="page-header-dot"></span>
-          {label}
-        </span>
 
-        <h1 className="page-header-title">
-          {title}
-          <span className="page-header-highlight">{highlight}</span>
+      <div className="page-header-content">
+
+        <span className="page-header-label">
+
+          <span className="page-header-dot">
+          </span>
+           {etiqueta}
+
+        </span>
+        
+        <h1 className="page-header-title"> 
+          {titulo}
+          <span className="page-header-highlight">{resaltado}</span>
         </h1>
 
-        <p className="page-header-description">{description}</p>
+        <p className="page-header-description">{descripcion}</p>
+      
       </div>
+
     </section>
   );
 };

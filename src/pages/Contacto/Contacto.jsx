@@ -4,10 +4,10 @@ const Contacto = () => {
   return (
     <>
       <PageHeader
-        label="Contacto"
-        title="Contáctanos y solicita tu"
-        highlight="cotización"
-        description="Estamos disponibles para brindarte asesoramiento y ayudarte a encontrar la solución adecuada."
+        etiqueta="Contacto"
+        titulo="Contáctanos y solicita tu"
+        resaltado="cotización"
+        descripcion="Estamos disponibles para brindarte asesoramiento y ayudarte a encontrar la solución adecuada."
       />
     </>
   );

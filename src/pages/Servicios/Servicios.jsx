@@ -4,10 +4,10 @@ const Servicios = () => {
   return (
     <>
       <PageHeader
-        label="Servicios"
-        title="Soluciones en Gas Natural para cada"
-        highlight=" proyecto"
-        description="Ofrecemos soluciones técnicas para instalaciones nuevas, ampliaciones, modificaciones y proyectos de Gas Natural."
+        etiqueta="Servicios"
+        titulo="Soluciones en Gas Natural para cada"
+        resaltado=" proyecto"
+        descripcion="Ofrecemos soluciones técnicas para instalaciones nuevas, ampliaciones, modificaciones y proyectos de Gas Natural."
       />
     </>
   );
