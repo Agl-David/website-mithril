@@ -9,7 +9,7 @@
 
         <div className="servicios__contenedor">
           <div className="servicios__contenedor-card">
-            {/* <img src="" alt="" /> */}
+            <img src="" alt="" />
             <h1>{titulo}</h1>
             <p>{texto}</p>
           </div>
