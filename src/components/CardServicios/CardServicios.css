@@ -4,13 +4,13 @@
   display: block;
   background-color: var(---color-text);
 }
-/* Cabecera Titulo principal*/
-.servicios__titulo{
-
+/* contenedor de la card servicios*/
+.servicios__contenedor-card{
+display: flex;
+flex-direction: column;
+background-color: #0c0c8371;
 }
 
 
 
-.servicios__cabecera h1 {
 
-}

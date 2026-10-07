@@ -1,16 +1,14 @@
   import "./CardServicios.css";
 
-  const CardServicios = ({titulo, texto}) => {
+  const CardServicios = ({titulo, texto, imagen}) => {
     return (
       <section className="servicios">
 
-        <div className="servicios__contenedor">
           <div className="servicios__contenedor-card">
-            <img src="" alt="" />
+            <img src={imagen} alt="Imagen de servicio" />
             <h2>{titulo}</h2>
             <p>{texto}</p>
           </div>
-        </div>
 
       </section>
     );

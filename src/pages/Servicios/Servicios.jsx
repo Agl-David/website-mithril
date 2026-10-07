@@ -12,12 +12,32 @@ const Servicios = () => {
         descripcion="Ofrecemos soluciones técnicas para instalaciones nuevas, ampliaciones, modificaciones y proyectos de Gas Natural."
       />
       <TituloPages 
-        enunciado= "Nuestros Servicios"
+        enunciado= "Enunciado de la sección"
       />
       <CardServicios
-        tituloPrincipal= "Nuestros Servicios"
-        tituloSecundario="Conversión de Cocinas GLP a GN"
-        texto="lorem"
+        titulo= "Aprobación de Proyectos"
+        texto="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        imagen= "https://www.ferroli.com.ar/wp-content/uploads/2021/09/servicios-1.jpg"
+      />
+      <CardServicios
+        titulo= "Aprobación de Proyectos"
+        texto="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        imagen= "https://www.ferroli.com.ar/wp-content/uploads/2021/09/servicios-1.jpg"
+      />
+      <CardServicios
+        titulo= "Aprobación de Proyectos"
+        texto="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        imagen= "https://www.ferroli.com.ar/wp-content/uploads/2021/09/servicios-1.jpg"
+      />
+      <CardServicios
+        titulo= "Aprobación de Proyectos"
+        texto="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        imagen= "https://www.ferroli.com.ar/wp-content/uploads/2021/09/servicios-1.jpg"
+      />
+      <CardServicios
+        titulo= "Aprobación de Proyectos"
+        texto="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        imagen= "https://www.ferroli.com.ar/wp-content/uploads/2021/09/servicios-1.jpg"
       />
     </>
   );
