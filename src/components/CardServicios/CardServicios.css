@@ -1,4 +1,16 @@
 .servicios{
-  height: auto;
   width: auto;
+  height: auto;
+  display: block;
+  background-color: var(---color-text);
+}
+/* Cabecera Titulo principal*/
+.servicios__titulo{
+
+}
+
+
+
+.servicios__cabecera h1 {
+
 }

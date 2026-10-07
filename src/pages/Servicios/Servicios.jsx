@@ -1,5 +1,6 @@
-import CardServicios from "../../components/CardServicios/CardServicios";
 import PageHeader from "../../components/PageHeader/PageHeader";
+import TituloPages from "../../components/TituloPages/TituloPages";
+import CardServicios from "../../components/CardServicios/CardServicios";
 
 const Servicios = () => {
   return (
@@ -10,9 +11,13 @@ const Servicios = () => {
         resaltado="proyecto"
         descripcion="Ofrecemos soluciones técnicas para instalaciones nuevas, ampliaciones, modificaciones y proyectos de Gas Natural."
       />
+      <TituloPages 
+        enunciado= "Nuestros Servicios"
+      />
       <CardServicios
-        titulo="Instalacion de Calefon"
-        texto="Habilitacion de Calefon"
+        tituloPrincipal= "Nuestros Servicios"
+        tituloSecundario="Conversión de Cocinas GLP a GN"
+        texto="lorem"
       />
     </>
   );
