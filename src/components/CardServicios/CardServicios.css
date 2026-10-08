@@ -1,16 +1,47 @@
-.servicios{
-  width: auto;
+/* Card de los servicios */
+
+.servicios__contenedor-card {
+  width: 250px;
   height: auto;
-  display: block;
-  background-color: var(---color-text);
+
+  padding: 15px;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--color-text);
 }
-/* contenedor de la card servicios*/
-.servicios__contenedor-card{
-display: flex;
-flex-direction: column;
-background-color: #0c0c8371;
+
+/* IMAGEN */
+
+.servicios__contenedor-card img {
+  width: 100%;
+  height: 150px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
 }
 
+/* TÍTULO */
 
+.servicios__contenedor-card h2 {
+  margin: 12px 0 8px;
 
+  font-size: 18px;
+  font-weight: 700;
 
+  color: #071b4d;
+}
+
+/* TEXTO */
+
+.servicios__contenedor-card p {
+  margin: 0;
+
+  font-size: 10px;
+  line-height: 1.5;
+
+  color: #071b4d;
+}
