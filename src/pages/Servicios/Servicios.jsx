@@ -1,8 +1,16 @@
+// import Components
 import PageHeader from "../../components/PageHeader/PageHeader";
 import TituloPages from "../../components/TituloPages/TituloPages";
 import CardServicios from "../../components/CardServicios/CardServicios";
 
-import "./Servicios.css"
+//Import css page
+import Servicios from "./Servicios.css"
+
+// Importacion de imagenes
+import imgProyectos from "../../assets/imgs/servicios/proyectos.jpg"
+import imgHornalla from "../../assets/imgs/servicios/hornalla.png"
+
+
 
 const Servicios = () => {
   return (
@@ -19,27 +27,22 @@ const Servicios = () => {
 
       <div className="servicios__contenedor">
         <CardServicios
-          titulo="Aprobación de Proyectos"
+          titulo="Diseño, elaboración y Aprobación de Proyectos"
           texto="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          imagen="https://images.unsplash.com/photo-1608454770647-01dc0f7dd97d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          imagen={imgProyectos}
         />
         <CardServicios
-          titulo="Aprobación de Proyectos"
+          titulo="Instalación y Habilitacion de Equipos a Gas Natural"
           texto="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          imagen="https://www.ferroli.com.ar/wp-content/uploads/2021/09/servicios-1.jpg"
+          imagen={imgHornalla}
         />
         <CardServicios
-          titulo="Aprobación de Proyectos"
-          texto="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          imagen="https://www.ferroli.com.ar/wp-content/uploads/2021/09/servicios-1.jpg"
-        />
-        <CardServicios
-          titulo="Aprobación de Proyectos"
+          titulo="Pruebas de Fuga y Reparaciones"
           texto="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           imagen="https://www.ferroli.com.ar/wp-content/uploads/2021/09/servicios-1.jpg"
         />
         <CardServicios
-          titulo="Aprobación de Proyectos"
+          titulo="Modificaciones, Ampliaciones y Mantenimiento"
           texto="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           imagen="https://www.ferroli.com.ar/wp-content/uploads/2021/09/servicios-1.jpg"
         />
