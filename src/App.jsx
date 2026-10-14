@@ -1,7 +1,8 @@
 // import "./App.css";
 
-// Import de componentes permanente
+// Import de componentes permanentes
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 // Import de React Router
 import { Route, Routes } from "react-router-dom";
@@ -26,7 +27,8 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-    </>
+      <Footer />
+    </> 
   );
 }
 
