@@ -4,7 +4,7 @@ import TituloPages from "../../components/TituloPages/TituloPages";
 import CardServicios from "../../components/CardServicios/CardServicios";
 
 //Import css page
-import Servicios from "./Servicios.css"
+import "./Servicios.css"
 
 // Importacion de imagenes
 import imgProyectos from "../../assets/imgs/servicios/proyectos.jpg"
