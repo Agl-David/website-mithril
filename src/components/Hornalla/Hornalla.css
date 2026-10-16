@@ -1,0 +1,183 @@
+.hornalla {
+  position: relative;
+  width: 360px;
+  height: 300px;
+  margin: 30px auto;
+  isolation: isolate;
+}
+
+/* Conjunto completo */
+.hornalla__quemador {
+  position: absolute;
+  inset: 0;
+}
+
+/* Cuerpo inferior */
+.hornalla__base {
+  position: absolute;
+  z-index: 1;
+  bottom: 24px;
+  left: 50%;
+  width: 300px;
+  height: 65px;
+  transform: translateX(-50%);
+  border-radius: 12px 12px 35px 35px;
+
+  background: linear-gradient(
+    to bottom,
+    #454545 0%,
+    #202020 40%,
+    #080808 100%
+  );
+
+  border: 2px solid #333;
+
+  box-shadow:
+    0 12px 18px #0008,
+    inset 0 3px 5px #ffffff18,
+    inset 0 -8px 10px #000;
+}
+
+/* Zona donde nacen las llamas */
+.hornalla__llamas {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 79px;
+  width: 190px;
+  height: 70px;
+  transform: translateX(-50%);
+}
+
+/* Llamas individuales */
+.hornalla__llama {
+  position: absolute;
+  left: calc(var(--i) * 15px);
+  bottom: 0;
+
+  width: 13px;
+  height: var(--altura);
+
+  transform: rotate(var(--inclinacion));
+  transform-origin: bottom center;
+
+  border-radius: 70% 30% 45% 45%;
+
+  background: linear-gradient(
+    to top,
+    #007bff 0%,
+    #00bfff 35%,
+    #31e5ff 70%,
+    #a5f5ff 88%,
+    #ffffff 100%
+  );
+
+  clip-path: polygon(
+    50% 0%,
+    67% 25%,
+    100% 55%,
+    83% 82%,
+    65% 100%,
+    32% 100%,
+    12% 78%,
+    0% 53%,
+    34% 28%
+  );
+
+  filter: drop-shadow(0 0 4px #00aeff);
+
+  animation: llama-lateral 0.22s ease-in-out infinite alternate;
+  animation-delay: calc(var(--i) * -0.035s);
+}
+
+/* Núcleo luminoso */
+.hornalla__llama-interior {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  width: 4px;
+  height: 60%;
+
+  transform: translateX(-50%);
+
+  border-radius: 50% 50% 20% 20%;
+
+  background: linear-gradient(
+    to top,
+    #008cff,
+    #a5f5ff 70%,
+    #ffffff
+  );
+
+  filter: blur(1px);
+}
+
+/* Aro metálico visto desde el costado */
+.hornalla__aro {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 68px;
+
+  width: 210px;
+  height: 25px;
+
+  transform: translateX(-50%);
+  border-radius: 50%;
+
+  background: linear-gradient(
+    to bottom,
+    #e8e8e8 0%,
+    #777 22%,
+    #d0d0d0 45%,
+    #444 75%,
+    #181818 100%
+  );
+
+  border: 1px solid #333;
+
+  box-shadow:
+    inset 0 2px 3px #ffffffaa,
+    0 4px 5px #0009;
+}
+
+/* Tapa superior del quemador */
+.hornalla__tapa {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  bottom: 78px;
+
+  width: 170px;
+  height: 24px;
+
+  transform: translateX(-50%);
+  border-radius: 50%;
+
+  background: linear-gradient(
+    to bottom,
+    #4b4b4b,
+    #252525 55%,
+    #111
+  );
+
+  border: 2px solid #171717;
+
+  box-shadow:
+    inset 0 2px 3px #ffffff12,
+    0 3px 5px #0008;
+}
+
+/* Movimiento irregular de las llamas */
+@keyframes llama-lateral {
+  from {
+    height: calc(var(--altura) * 0.88);
+    filter: brightness(0.85) drop-shadow(0 0 3px #008cff);
+  }
+
+  to {
+    height: var(--altura);
+    filter: brightness(1.2) drop-shadow(0 0 6px #00cfff);
+  }
+}

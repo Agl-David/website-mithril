@@ -14,6 +14,7 @@ import Nosotros from "./pages/Nosotros/Nosotros";
 import Proyectos from "./pages/Proyectos/Proyectos";
 import Contacto from "./pages/Contacto/Contacto";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import Hornalla from "./components/Hornalla/Hornalla";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
+      <Hornalla />
     </> 
   );
 }
