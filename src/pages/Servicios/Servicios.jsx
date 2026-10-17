@@ -9,8 +9,8 @@ import "./Servicios.css"
 // Importacion de imagenes
 import imgProyectos from "../../assets/imgs/servicios/proyectos.jpg"
 import imgHornalla from "../../assets/imgs/servicios/hornalla.png"
-
-
+import imgTuberia from "../../assets/imgs/servicios/tuberia.jpg"
+import imgValvula from "../../assets/imgs/servicios/valvula.jpg"
 
 const Servicios = () => {
   return (
@@ -39,12 +39,12 @@ const Servicios = () => {
         <CardServicios
           titulo="Pruebas de Fuga y Reparaciones"
           texto="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          imagen="https://www.ferroli.com.ar/wp-content/uploads/2021/09/servicios-1.jpg"
+          imagen={imgValvula}
         />
         <CardServicios
           titulo="Modificaciones, Ampliaciones y Mantenimiento"
           texto="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          imagen="https://www.ferroli.com.ar/wp-content/uploads/2021/09/servicios-1.jpg"
+          imagen={imgTuberia}
         />
       </div>
     </>
