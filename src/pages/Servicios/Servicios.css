@@ -1,18 +1,22 @@
 
-/* =========================
-   SECCIÓN SERVICIOS
-========================= */
+/* Seccion servicios contenedor */
 
 .servicios {
   width: 100%;
-  padding: 40px 24px 80px;
-  background-color: #FFFFFF;
-  color: #11110F;
+  padding: 20px 20px;
+  background-color: var(--color-text);
+  color: var(--color-background-dark);
 }
 
-/* =========================
-   CONTENEDOR DE TARJETAS
-========================= */
+/* Titulo de los servicios */
+
+.servicios h2 {
+  color: var(--color-background-dark);
+  padding: 10px 24px;
+  font-family: var(--font-family);
+}
+
+/* contenedor tarjetas */
 
 .servicios__contenedor {
   display: flex;
@@ -27,9 +31,7 @@
   margin: 0 auto;
 }
 
-/* =========================
-   TABLETS
-========================= */
+/* TABLETS */
 
 @media (max-width: 900px) {
   .servicios {
@@ -41,9 +43,7 @@
   }
 }
 
-/* =========================
-   MÓVILES
-========================= */
+/* MÓVILES */
 
 @media (max-width: 600px) {
   .servicios {

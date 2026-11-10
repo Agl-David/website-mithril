@@ -1,16 +1,10 @@
-/* =========================
-   RESET
-========================= */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* =========================
-   VARIABLES GLOBALES
-========================= */
+/* VARIABLES GLOBALES */
 
 :root {
   --color-primary: #FAE300;
@@ -19,13 +13,12 @@
   --color-text: #FFFFFF;
   --color-text-secondary: #A6A6A6;
   --color-border: #2A2A28;
+  --color-shadow: #eee8e8f5;
 
   --font-family: "Roboto", sans-serif;
 }
 
-/* =========================
-   ESTILOS BASE
-========================= */
+/* ESTILOS BASE */
 
 html {
   scroll-behavior: smooth;

@@ -1,10 +1,9 @@
-  import "./Footer.css";
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__container">
-
         {/* Columna 1: Descripción */}
         <section className="footer__descripcion">
           <a href="/" className="footer__logo">
@@ -16,12 +15,16 @@ const Footer = () => {
           </a>
 
           <p className="footer__text">
-            Soluciones profesionales en instalaciones de gas
-            natural para proyectos residenciales y comerciales.
-            Seguridad, calidad y confianza en cada instalación.
+            Soluciones profesionales en instalaciones de gas natural para
+            proyectos residenciales y comerciales. Seguridad, calidad y
+            confianza en cada instalación.
           </p>
-
-          <a href="/contacto" className="footer__boton">
+          <a
+            href="https://wa.me/59168500875?text=Hola,%20quisiera%20solicitar%20una%20cotizaci%C3%B3n."
+            className="footer__boton"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Solicitar cotización
             <span aria-hidden="true"> ↗</span>
           </a>
@@ -79,9 +82,7 @@ const Footer = () => {
 
           <ul className="footer__lista">
             <li>
-              <a href="tel:+59171433512">
-                +591 71433512
-              </a>
+              <a href="tel:+59171433512">+591 71433512</a>
             </li>
 
             <li>
@@ -99,14 +100,12 @@ const Footer = () => {
             </li>
           </ul>
         </section>
-
       </div>
 
       {/* Barra inferior */}
       <div className="footer__bottom">
         <p className="footer__copyright">
-          © {new Date().getFullYear()} MITHRIL.
-          Todos los derechos reservados.
+          © {new Date().getFullYear()} MITHRIL. Todos los derechos reservados.
         </p>
 
         <a href="/contacto" className="footer__bottom-link">
