@@ -1,3 +1,5 @@
+// Import de los componentes
+import CallToAction from "../../components/CallToAction/CallToAction";
 import PageHeader from "../../components/PageHeader/PageHeader";
 
 const Inicio = () => {
@@ -9,6 +11,8 @@ const Inicio = () => {
         resaltado="Gas Natural"
         descripcion="Diseño, instalación y asesoramiento para proyectos residenciales, comerciales e industriales."
       />
+
+      <CallToAction/>
     </>
   );
 };

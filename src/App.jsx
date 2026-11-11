@@ -30,7 +30,7 @@ function App() {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
-      {/* <Hornalla /> */}
+      
     </> 
   );
 }
